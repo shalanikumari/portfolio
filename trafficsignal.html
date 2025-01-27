@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Signal Animation</title>
+  <style>
+  
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d1e7f3;
+}
+
+.road {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #333;
+}
+
+.traffic-signal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 150px;
+  background-color: #222;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+.light {
+  width: 40px;
+  height: 40px;
+  background-color: #555;
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
+}
+
+@keyframes trafficLights {
+  0%,
+  25% {
+    background-color: #e74c3c; /* Red */
+  }
+  33%,
+  58% {
+    background-color: #f1c40f; /* Yellow */
+  }
+  66%,
+  100% {
+    background-color: #2ecc71; /* Green */
+  }
+}
+
+.red {
+  animation: trafficLights 9s linear infinite;
+}
+
+.yellow {
+  animation: trafficLights 9s linear infinite;
+  animation-delay: 3s;
+}
+
+.green {
+  animation: trafficLights 9s linear infinite;
+  animation-delay: 6s;
+}
+  </style>
+</head>
+<body>
+  <div class="road">
+    <div class="traffic-signal">
+      <div class="light red"></div>
+      <div class="light yellow"></div>
+      <div class="light green"></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About HTML and Attributes</title>
+  <style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(to right, #f7f7f7, #e9ecef);
+  overflow-x: hidden;
+}
+
+header {
+  background: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  animation: slideDown 1s ease-out;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0;
+}
+
+.intro,
+.attributes {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro:hover,
+.attributes:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+ul li strong {
+  color: #007bff;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #343a40;
+  color: #fff;
+  margin-top: 2rem;
+  animation: fadeIn 2s ease-in;
+}
+
+footer a {
+  color: #00c1d4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About HTML</h1>
+    <p>The language of the web!</p>
+  </header>
+
+  <section class="intro">
+    <h2>What is HTML?</h2>
+    <p>
+      HTML (HyperText Markup Language) is the standard language for creating web pages. It describes the structure of a webpage and allows you to include text, images, links, and more.
+    </p>
+  </section>
+
+  <section class="attributes">
+    <h2>HTML Attributes</h2>
+    <ul>
+      <li><strong>href</strong>: Specifies the URL for a link.</li>
+      <li><strong>src</strong>: Specifies the source for an image or a script.</li>
+      <li><strong>alt</strong>: Provides alternative text for images.</li>
+      <li><strong>id</strong>: Specifies a unique ID for an element.</li>
+      <li><strong>class</strong>: Assigns a class name to an element for styling.</li>
+      <li><strong>style</strong>: Adds inline CSS styles to an element.</li>
+      <li><strong>title</strong>: Provides additional information as a tooltip.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Learn more about HTML and its attributes at <a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a>.</p>
+  </footer>
+</body>
+</html>
